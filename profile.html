@@ -1,0 +1,24 @@
+<html>
+	<head>
+	<script src="scripts/jquery.min.js"></script>
+	<script src="scripts/profile.js"></script>	
+	</head>
+	<body>
+		<h1>Guvi Intern</h1>
+		<h2>Welcome to the profile page</h2>
+		<form id="profileform">
+			Username:<input type="text" name="name" id="name" minlength="2" maxlength="25" placeholder="Enter your name" pattern="[a-zA-Z0-9\s]+" title="must be alphanumeric with or without spaces" required><br><br>
+			Email Id:<input type="email" name="email" id="email" placeholder="Enter your email" required><br><br>
+			Degree:<input type="text" name="degree" id="degree" minlength="2" maxlength="50" placeholder="Enter your degree" pattern="[a-zA-Z\s]+" title="please use full form of your degree"><br><br>
+			Department:<input type="text" name="department" id="department" minlength="2" maxlength="50" placeholder="Enter your department" pattern="[a-zA-Z\s]+" title="numbers and special characters are not allowed"><br><br>
+			Age:<input type="text" name="age" id="age" max="120" placeholder="Enter your age" pattern="[0-9]+" title="must be numeric"><br><br>
+			College:<input type="text" name="college" id="college" minlength="2" maxlength="50" placeholder="Enter your college name" pattern="[a-zA-Z\s]+" title="numbers and special characters are not allowed"><br><br>
+			Gender:<input type="radio" name="gender" id="Male" value="Male"> Male
+  			<input type="radio" name="gender" id="Female" value="Female"> Female
+  			<input type="radio" name="gender" id="Other" value="Other"> Other<br><br>
+  			Contact number:<input type="text" name="contact" id="contact" maxlength="10" minlength="8" pattern="[0-9]+" placeholder="Enter your contact number" title="please enter a valid contact number"><br><br>
+			<input type="submit" name="update" value="update" id="update">
+		</form>
+		<button id="logout" value="logout">Logout</button>
+	</body>
+</html>

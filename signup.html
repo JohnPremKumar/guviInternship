@@ -1,0 +1,19 @@
+<html>
+	<head>
+	<script src="scripts/jquery.min.js"></script>
+	<script src="scripts/signup.js"></script>
+	</head>
+	<body>
+		<h1>GUVI Internship</h1>
+		<h2>Register</h2>
+		<form id="supform">
+  			Username:<input type="text" name="name" id="name" minlength="2" maxlength="25" placeholder="Enter your name" pattern="[a-zA-Z0-9\s]+" title="must be alphanumeric with or without spaces" required><span id="nameErr"></span><br><br>
+  			Email Id:<input type="email" name="email" id="email" placeholder="Enter your email" required><br><br>
+  			New Password:<input type="password" name="npass" id="npass" minlength="8" maxlength="13" pattern="[a-zA-Z0-9]+" title="must be alphanumeric" placeholder="New password" required><br><br>
+  			Confirm Password:<input type="password" name="cpass" id="cpass" minlength="8" maxlength="13" pattern="[a-zA-Z0-9]+" title="must be alphanumeric" placeholder="Confirm password" required><span id="passErr"></span><br><br>
+  			<input type="submit" name="signup" value="signup" id="signup">
+		</form>
+		<p>Already Registered?</p>
+		<a href="guviIntern.html">click here to login</a>
+	</body>
+</html>
