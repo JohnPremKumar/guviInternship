@@ -24,10 +24,10 @@ function checkConnection(){
 
 function getValues($conn){
 	if(!($stmt = $conn->prepare("SELECT Name,RegisterNo,Email,ContactNo,Age,Department,College FROM class ORDER BY id"))){
-		echo "error";
+		echo "prepare error";
 	}
 	if(!$stmt->execute()){
-		echo "execute error";
+		echo "execution error";
 	}
 	$result = $stmt->get_result();
 	$json = array();
